@@ -1,0 +1,6 @@
+declare 
+first_name varchar(20);
+begin
+select first_name into first_name from employees where EMPLOYEE_ID in ('101');
+dbms_output.put_line (first_name);
+end;/n this is third line
